@@ -1,0 +1,32 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"compilePath=${workspaceRoot}",
+				"compileCommand=openfl build mac -debug -DHXCPP_DEBUGGER",
+				"runPath=${workspaceRoot}/Export/mac64/cpp/bin/DisplayingABitmap.app/Contents/MacOS/",
+				"runCommand=DisplayingABitmap",
+				"runInTerminal=false"
+			],
+			"name": "Build and debug",
+			"type": "hxcpp",
+			"request": "launch",
+			"stopOnEntry": true
+		},
+		{
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"runPath=${workspaceRoot}/Export/mac64/cpp/bin/DisplayingABitmap.app/Contents/MacOS/",
+				"runCommand=DisplayingABitmap",
+				"runInTerminal=false"
+			],
+			"name": "Debug",
+			"type": "hxcpp",
+			"request": "launch",
+			"program": "",
+			"stopOnEntry": true
+		}
+	]
+}
